@@ -1,9 +1,10 @@
 import axios from 'axios';
 import process from 'process';
 
+// require('dotenv').config({path: __dirname + '/.env'});
 const [ node, script, city] = process.argv;
 
-// const apikey = process.env.OPEN_WEATHER_API_KEY;
+// export const apikey = process.env['OPEN_WEATHER_API_KEY'];
 const apikey = '4d117631921f7c71863a35c91745442a';
 
 axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`)
