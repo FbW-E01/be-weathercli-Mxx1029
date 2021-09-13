@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "env": "^0.0.2"
+    "dotenv": "^10.0.0"
   }
 }
